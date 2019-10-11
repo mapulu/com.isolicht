@@ -1,0 +1,79 @@
+{
+  "id": "com.isolicht",
+  "version": "1.0.0",
+  "compatibility": ">=2.4.0",
+  "sdk": 2,
+  "name": {
+    "en": "Isolicht / HOMA"
+  },
+  "description": {
+    "en": "Adds support for Isolicht / HOMA devices."
+  },
+  "category": [
+    "lights"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Martin P",
+    "email": "martin@pussamsies.de"
+  },
+  "drivers": [
+    {
+      "id": "dimmaktor",
+      "name": {
+        "en": "230V Triac-Controller",
+        "de": "230V Dimmaktor",
+        "nl": "230V Triac-Controller"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {},
+        "dim": {}
+      },
+      "images": {
+        "large": "/drivers/dimmaktor/assets/images/large.jpg",
+        "small": "/drivers/dimmaktor/assets/images/small.jpg"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "ShenZhen_Homa"
+        ],
+        "productId": [
+          "HOMA1004",
+          "HOMA1031"
+        ],
+        "deviceId": 256,
+        "profileId": 49246
+      },
+      "settings": [
+        {
+          "id": "transition_time",
+          "type": "number",
+          "label": {
+            "en": "Transition Time",
+            "de": "Übergangszeit",
+            "nl": "Overgangstijd"
+          },
+          "hint": {
+            "en": "This setting determines the time in seconds it takes to dim from one level to another.",
+            "de": "Diese Einstellung bestimmt die Zeit in Sekunden, die benötigt wird, um von einer Stufe zur anderen zu dimmen.",
+            "nl": "Deze instelling bepaalt de duur in seconden van het dimmen van een niveau naar een ander."
+          },
+          "value": 0,
+          "attr": {
+            "min": 0,
+            "max": 6553
+          }
+        }
+      ]
+    }
+  ]
+}
