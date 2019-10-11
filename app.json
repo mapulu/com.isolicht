@@ -39,8 +39,8 @@
         "dim": {}
       },
       "images": {
-        "large": "/drivers/dimmaktor/assets/images/large.jpg",
-        "small": "/drivers/dimmaktor/assets/images/small.jpg"
+        "large": "/drivers/dimmaktor/assets/images/large.png",
+        "small": "/drivers/dimmaktor/assets/images/small.png"
       },
       "zigbee": {
         "manufacturerName": [
